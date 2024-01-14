@@ -1,0 +1,173 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* reset code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Variables */
+:root {
+    --white: #FFF;
+    --black: #3a3a3a;
+    --dark: #787885;
+    --pink: #e02c6d;
+    --brand-border: #eeeeee;
+    --rating: #fb8200;
+    --footer-bg: #0a0826;
+    --body-bg: ##aaaaaa;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.container-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2rem 0;
+}
+
+.logo h2 {
+    font-size: 1.25rem;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.container-inner nav {
+    display: flex;
+    align-items: center;
+}
+
+.container-inner nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-inner nav .search {
+    margin: 0px 30px;
+}
+
+.container-inner nav ul li a {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.container-inner nav .search i,
+.container-inner nav .cart i {
+    font-size: 1.25rem;
+
+}
+
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 50px 0px;
+}
+
+.banner .banner-img {
+    background-image: url(./images/Circle\ design.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .banner-title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+}
+
+.banner .banner-discription {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px 0;
+}
+
+.banner button {
+    padding: 10px 24px;
+    background: var(--pink);
+    border-radius: 41px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    border: none;
+    transition: 1s;
+}
+.banner button:hover{
+    cursor: pointer;
+    background: var(--dark);
+    color: var(--white);
+}
+
+section {
+    margin: 100px 0px;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 2.2rem 0rem;
+    border-top: 1px solid var(--brand-border);
+    border-bottom: 1px solid var(--brand-border);
+}
+.brand img{
+    display: block;
+    flex: 1;
+    max-width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 567px){
+    .banner{
+        flex-direction: column;
+        text-align: center;
+    }
+}
