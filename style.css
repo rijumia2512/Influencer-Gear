@@ -124,7 +124,8 @@ body {
     border: none;
     transition: 1s;
 }
-.banner button:hover{
+
+.banner button:hover {
     cursor: pointer;
     background: var(--dark);
     color: var(--white);
@@ -133,7 +134,8 @@ body {
 section {
     margin: 100px 0px;
 }
-.brand{
+
+.brand {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,12 +145,128 @@ section {
     border-top: 1px solid var(--brand-border);
     border-bottom: 1px solid var(--brand-border);
 }
-.brand img{
+
+.brand img {
     display: block;
     flex: 1;
     max-width: 100px;
 }
 
+.collection-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 70px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.card-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card .price {
+    font-size: 24px;
+    line-height: 2rem;
+    color: var(--black);
+}
+
+.card .rating {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.card .rating span i {
+    color: var(--rating);
+}
+
+.card .rating span:last-child {
+    margin-left: 8px;
+}
+
+.card .card-discription {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: 0.05rem;
+}
+
+.see-more {
+    text-align: right;
+    margin: 50px 0;
+}
+
+.see-more a {
+    font-weight: bold;
+    color: var(--pink);
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.feature-img img {
+    width: 400px;
+    height: 260px;
+}
+
+.feature-text h2 {
+    font-size: 38px;
+}
+
+.feature-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 1rem 0;
+}
+.feature-text button {
+    cursor: pointer;
+    padding: 10px 24px;
+    background: var(--pink);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    border: none;
+}
+footer {
+    background-color: var(--footer-bg);
+    color: var(--white);
+    padding: 50px 0;
+    text-align: center;
+  }
+  footer h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  footer .links a i {
+    margin: 1rem;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--dark);
+    padding-top: 8px;
+  }
+  footer .links a i:hover{
+    background-color: blue;
+  }
 
 
 
@@ -163,10 +281,8 @@ section {
 
 
 
-
-
-@media only screen and (max-width: 567px){
-    .banner{
+@media only screen and (max-width: 567px) {
+    .banner {
         flex-direction: column;
         text-align: center;
     }
